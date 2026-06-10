@@ -1,3 +1,5 @@
+> **MERGED:** This plugin has been merged into [four-opencode-supertools](https://github.com/four-bytes/four-opencode-supertools). All git analysis tools now live there.
+
 # @four-bytes/four-opencode-git-tools
 
 Git history analysis tools for opencode agents — curse scores, bus factor, implicit coupling, and ownership.
