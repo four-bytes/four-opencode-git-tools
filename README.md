@@ -1,10 +1,10 @@
 # @four-bytes/four-opencode-git-tools
 
-Git history analysis tools for opencode agents — curse scores, bus factor, implicit coupling, and ownership
+Git history analysis tools for opencode agents — curse scores, bus factor, implicit coupling, and ownership.
 
 ## Status
 
-P14, in Planung.
+Wave P14, planned.
 
 ## Installation
 
@@ -12,21 +12,36 @@ P14, in Planung.
 bun install @four-bytes/four-opencode-git-tools
 ```
 
-## Konfiguration
+## Configuration
 
-```typescript
-// opencode.config.ts
-export default {
-  plugins: [
-    require("@four-bytes/four-opencode-git-tools"),
-  ],
-};
+Add to `~/.config/opencode/opencode.json`:
+
+```json
+{
+  "plugin": ["file:///home/user/four-opencode-git-tools/dist/four-opencode-git-tools.js"]
+}
 ```
 
-## Usage
+Restart opencode after adding.
 
-<!-- TODO: Add usage examples -->
+## Tools
 
-## Lizenz
+| Tool | Description |
+|---|---|
+| `curse_score` | Rank files by risk (changes × author chaos × recency × churn acceleration) |
+| `bus_factor` | Ownership concentration per directory — find orphaned modules |
+| `implicit_coupling` | Detect files that always change together — hidden dependencies |
+| `ownership` | Line-level author breakdown per file/directory |
+| `blast_radius` | Given a file, find everything that might break when you touch it |
 
-Apache-2.0 —siehe [LICENSE](../LICENSE)
+## Development
+
+```bash
+bun install
+bun run build
+bun test
+```
+
+## License
+
+Apache-2.0 — see [LICENSE](LICENSE)
