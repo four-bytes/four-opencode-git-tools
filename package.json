@@ -1,6 +1,6 @@
 {
   "name": "@four-bytes/four-opencode-git-tools",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Git history analysis tools for opencode agents — curse scores, bus factor, implicit coupling, and ownership",
   "license": "Apache-2.0",
   "type": "module",
@@ -10,7 +10,14 @@
     "test": "bun test",
     "typecheck": "tsc --noEmit"
   },
-  "keywords": ["opencode", "opencode-plugin", "four-bytes", "git", "git-history", "code-analysis"],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "four-bytes",
+    "git",
+    "git-history",
+    "code-analysis"
+  ],
   "dependencies": {
     "@opencode-ai/plugin": "^1.15.13"
   },
